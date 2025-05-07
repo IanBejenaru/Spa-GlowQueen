@@ -1,0 +1,40 @@
+@use "../abstracts/abstracts" as *;
+
+
+header {
+    margin-top: 90px;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-right: 240px;
+    a {
+        color: $blue;
+        text-decoration: none;
+    }
+
+    .navegador__principal ul {
+        display: flex;
+        align-items: baseline;
+        //align-items: stretch;
+        gap: 56px;
+    }
+    .navegador__iconos ul{
+        display: flex;
+        gap: 64px;
+    }
+
+    .navegador__registro ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        li:first-child a {
+            text-decoration: underline;
+        }
+        .btn {
+            @include boton-azul;
+        }
+    }
+}
+
