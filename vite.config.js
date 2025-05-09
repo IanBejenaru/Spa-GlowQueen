@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './', // Para rutas relativas
+  base: '/Spa-GlowQueen/',
   server: {
     watch: {
-      usePolling: true // Útil para entornos como WSL o Docker
+      usePolling: true
     }
   }
 });
