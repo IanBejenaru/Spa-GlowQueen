@@ -2,6 +2,9 @@
 
 
 section.hero {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
 
     h1 {
         color: $blue;
@@ -19,16 +22,68 @@ section.hero {
     }
 
     &__content {
-        display: grid;
-        la;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .hero__button ul {
-        display: flex;
-        align-items: center;
+    .hero__img {
         
-        li:first-child a {
-            @include boton-azul;
+        width:30%;
+    }
+
+    .hero__button {
+        //display: inline;
+        //align-items: center;
+
+        ul {
+            display: flex;
+            //gap: 48px;
+            justify-content: space-between;
+            align-items: center;
+            //flex-wrap: wrap;
+            //list-style: none;
+            width: 70%;
+
+            li {
+                display: flex;
+                align-items: center;  // Alinea verticalmente
+                position: relative;
+
+                &:first-child a {
+                    @include boton-azul;
+                }
+
+                &:nth-child(2) {
+                    height: 100px;
+                    width: 300px;
+                    position: relative;
+                }
+
+                &:nth-child(2) a {
+                    list-style: none;
+                    text-decoration: none;
+                    color: $blue;
+                    padding-left: 40px;
+                    padding: 20px 44px;
+                }
+                &:nth-child(2)::before {
+                    content: '';
+                    position: absolute;
+                    left: -153px;
+                    top: 50%;
+                    transform: translateY(-35%);  
+                    width:100%;
+                    height: 100%;
+                    background-image: url(../../img/icono-play.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                }
+
+            }
         }
+
+        
     }
 }

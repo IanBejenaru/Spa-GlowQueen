@@ -1,0 +1,37 @@
+@use "../abstracts/abstracts" as *;
+
+
+.articol-type{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:72px;
+    max-width: 35%;
+    padding: 32px;
+    border-radius: 16px;
+    margin-bottom: 100px;
+
+    &__item {
+        width: 240px;
+
+        &-img {
+            margin-bottom: 24px;
+        }
+
+        &-title {
+            //align-items: center;
+            font-size: 30px;      
+            margin-bottom: 24px;    
+            color: $blue;
+            font-weight: 600; 
+        }
+        
+        &-description {
+            color: $grey;
+            font-size: 20px;
+        }  
+    }
+
+}
