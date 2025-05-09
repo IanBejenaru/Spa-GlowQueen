@@ -48,4 +48,9 @@
   background-color: $blue;
   text-decoration: none;
   border-radius: 28px;
+  &:hover {
+    color:black;
+    background-color: $green-light;
+    
+  }
 }
